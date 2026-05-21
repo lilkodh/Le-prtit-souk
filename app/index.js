@@ -1,4 +1,5 @@
 import { View, Text, StyleSheet, ImageBackground , Image } from "react-native";
+
 export default function Home() {
   return (
     <ImageBackground
@@ -18,8 +19,24 @@ export default function Home() {
         <View style={styles.logocontainer}>
           <Image source={require("../assets/logo.png")}
              style={styles.logo} />
+            
         </View>
-      </View>
+        <View style={styles.textcontainer}>
+     <Text style={styles.Textt}>
+  Wel
+</Text>
+<Text style={styles.Text}>
+come 
+</Text>
+
+</View>
+<Text style={styles.petit}>
+ LE PETIT SOUK
+</Text>
+<View style={styles.menuCard}>
+
+</View>
+     </View>
     </ImageBackground>
   );
 }
@@ -73,5 +90,36 @@ logocontainer:{
   marginTop:50,
   
 },
+textcontainer : {
 
+  justifyContent: "center",
+  flexDirection: "row",
+  flex: 0.2,
+  
+}
+,
+Textt: {
+color: "#C63017",
+  fontSize: 70,
+
+  textAlign: "center",
+ 
+},
+Text: {
+  color: "#ECC880",
+  fontSize: 70,
+
+  textAlign: "center",
+},
+petit: {
+  flex:4,
+  color: "#D4A84F",
+  fontSize: 30,
+  textAlign: "center",
+  textDecorationLine: "underline",
+},
+menuCard: {
+  flex: 3,
+  backgroundColor: "#06251B",
+},
 });
