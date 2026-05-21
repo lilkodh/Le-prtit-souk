@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, ImageBackground } from "react-native";
+import { View, Text, StyleSheet, ImageBackground , Image } from "react-native";
 export default function Home() {
   return (
     <ImageBackground
@@ -15,6 +15,10 @@ export default function Home() {
             <Text style={styles.icon}>🔔</Text>
           </View>
         </View>
+        <View style={styles.logocontainer}>
+          <Image source={require("../assets/logo.png")}
+             style={styles.logo} />
+        </View>
       </View>
     </ImageBackground>
   );
@@ -27,7 +31,7 @@ const styles = StyleSheet.create({
 
   overlay: {
     flex: 1,
-    backgroundColor: "rgba(231, 231, 231, 0.45)",
+    backgroundColor: "rgba(10, 10, 10, 0.45)",
     
   },
 topbar: {
@@ -41,6 +45,9 @@ iconborder : {
   width: 50,
   height:50,
   borderRadius: 50,
+
+  borderWidth: 2,
+  borderColor: "#D4A84F",
   backgroundColor: "#06251B",
  
   justifyContent: "center",
@@ -49,5 +56,22 @@ iconborder : {
 icon : {
   color: "#D4A84F",
   fontSize: 25,
-}
+},
+logo:{
+  width: 100,
+  height : 100,
+  resizeMode:"contain",
+  borderWidth:3,
+  borderColor:"#D4A84F",
+  borderRadius: 50,
+  
+  
+},
+logocontainer:{
+  flex: 1,
+  alignItems:"center",
+  marginTop:50,
+  
+},
+
 });
