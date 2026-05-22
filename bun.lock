@@ -5,6 +5,7 @@
     "": {
       "name": "le-prtit-souk",
       "dependencies": {
+        "@expo/vector-icons": "^15.0.3",
         "expo": "~54.0.33",
         "expo-constants": "~18.0.13",
         "expo-linear-gradient": "~15.0.8",
