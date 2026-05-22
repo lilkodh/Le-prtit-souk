@@ -1,9 +1,13 @@
 import { Tabs } from "expo-router";
 export default function Layout (){
   return(
-    <Tabs>
+    <Tabs  screenOptions={{
+        headerShown: false,tabBarStyle: {
+  backgroundColor: "#06251B",height: 85 ,borderColor: "#ECC880",
+},
+      }}>
       <Tabs.Screen name="index" />
-          <Tabs.Screen name="menu" />
+          
     </Tabs>
   );
 }

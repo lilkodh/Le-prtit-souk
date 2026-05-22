@@ -6,7 +6,6 @@ export default function Home() {
     <ImageBackground
       source={require("../assets/background.png")}
       style={styles.background}
-       resizeMode="cover"
        
     >
       <View style={styles.overlay}>
@@ -79,13 +78,13 @@ export default function Home() {
 const styles = StyleSheet.create({
   background: {
      flex: 1,
-  width: "100%",
-  height: "100%",
+     height:"100%",
+     width:"100%"
   },
 
   overlay: {
     flex: 1,
-    backgroundColor: "rgba(10, 10, 10, 0.45)",
+    backgroundColor: "rgba(0, 0, 0, 0.61)",
     
   },
 
@@ -93,7 +92,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     paddingHorizontal: 10,
-    marginTop: 20,
+    marginTop: 60,
   },
 
   iconborder: {
@@ -116,6 +115,7 @@ const styles = StyleSheet.create({
   },
 
   logo: {
+    
     width: 100,
     height: 100,
 
@@ -165,17 +165,17 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     borderRadius: 20,
     marginBottom: 200,
-    borderWidth: 3,
+    borderWidth: 1,
     borderColor: "#ECC880",
   },
 
   menu2: {
-    height: "95%",
+    height: "94%",
     margin: 5,
     backgroundColor: "#06251B",
     borderRadius: 10,
     width: "95%",
-    borderWidth: 2,
+    borderWidth: 1,
     borderColor: "#D4A84F",
     alignSelf: "center",
   },
@@ -193,10 +193,10 @@ const styles = StyleSheet.create({
   line: {
     position: "absolute",
   left: "50%",
-  height: 200,
+  height: 190,
   width: 2,
   backgroundColor: "#D4A84F",
- top:15, 
+ top:10, 
   },
 
   falvor: {
@@ -215,7 +215,7 @@ const styles = StyleSheet.create({
   },
   button: {
  position: "absolute",
-  bottom: 100,
+  bottom: 60,
   alignSelf: "center",
   width: 220,
   height: 64,
@@ -236,7 +236,7 @@ const styles = StyleSheet.create({
      width: 190,
   height: 190,
   alignSelf: "flex-end",
-  top:30,
+  top:20,
   
   },
 
