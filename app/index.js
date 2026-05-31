@@ -1,5 +1,5 @@
-import { View, Text, StyleSheet, ImageBackground, Image } from "react-native";
-import { Button } from "react-native-web";
+import { View, Text, StyleSheet, ImageBackground, Image ,Pressable } from "react-native";
+import { router } from "expo-router";
 
 export default function Home() {
   return (
@@ -63,12 +63,14 @@ export default function Home() {
           <View style={styles.line}></View>
           
         </View>
-        <View style={styles.button}>
+        <Pressable style={styles.button} 
+        onPress={()=> router.replace("menu") }
+        >
           <Text style={styles.buttonText}>
     🍽️ View Menu
   </Text>
 
-        </View>
+        </Pressable>
       </View>
       
     </ImageBackground>
@@ -91,8 +93,8 @@ const styles = StyleSheet.create({
   topbar: {
     flexDirection: "row",
     justifyContent: "space-between",
-    paddingHorizontal: 10,
-    marginTop: 60,
+    paddingHorizontal: 20,
+    marginTop: 40,
   },
 
   iconborder: {
